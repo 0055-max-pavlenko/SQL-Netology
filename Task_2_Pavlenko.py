@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS records (
 CREATE TABLE IF NOT EXISTS albums (
 		album_id SERIAL PRIMARY KEY,
 		album_name VARCHAR(80) NOT NULL,
-		release_year DATE NOT NULL
+		release_year INTEGER NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS singer_album(
@@ -41,6 +41,6 @@ CREATE TABLE IF NOT EXISTS collection_record(
 CREATE TABLE IF NOT EXISTS collections(
 		collection_id SERIAL PRIMARY KEY,
 		collection_name VARCHAR(80),
-		release_year DATE NOT NULL
+		release_year INTEGER NOT NULL
 );
 

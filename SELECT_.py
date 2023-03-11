@@ -1,4 +1,4 @@
-SELECT album_name, release_year FROM albums
+п»їSELECT album_name, release_year FROM albums
 WHERE release_year = 2018;
 
 SELECT record_name, record_duration FROM records
@@ -15,8 +15,8 @@ SELECT singer_name FROM singers
 WHERE singer_name NOT LIKE '% %';
 
 SELECT record_name FROM records
-WHERE record_name LIKE ANY (ARRAY ['мой %', '% мой %', '% мой',
-'Мой %', '% Мой %', '% Мой',
+WHERE record_name LIKE ANY (ARRAY ['РјРѕР№ %', '% РјРѕР№ %', '% РјРѕР№',
+'РњРѕР№ %', '% РњРѕР№ %', '% РњРѕР№',
 'my %', '% my %', '% my',
 'My %', '% My %', '% My']);
 

@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS singer_album(
 
 CREATE TABLE IF NOT EXISTS singers (
 		singer_id SERIAL PRIMARY KEY,
-		singer_name VARCHAR(80)
+		singer_name VARCHAR(80) UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS singer_genre(
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS singer_genre(
 
 CREATE TABLE IF NOT EXISTS genre(
 		genre_id SERIAL PRIMARY KEY,
-		genre_name VARCHAR(80)
+		genre_name VARCHAR(80) UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS collection_record(
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS collection_record(
 
 CREATE TABLE IF NOT EXISTS collections(
 		collection_id SERIAL PRIMARY KEY,
-		collection_name VARCHAR(80),
+		collection_name VARCHAR(80) UNIQUE,
 		release_year INTEGER NOT NULL
 );
 

@@ -43,4 +43,3 @@ CREATE TABLE IF NOT EXISTS collections(
 		collection_name VARCHAR(80) UNIQUE,
 		release_year INTEGER NOT NULL CHECK (release_year >= 1901 AND release_year <= 2155)
 );
-
